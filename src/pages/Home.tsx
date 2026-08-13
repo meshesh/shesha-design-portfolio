@@ -115,6 +115,18 @@ export function Home() {
           <StatItem value={4} suffix="" label="Years experience" start={statsInView} />
           <StatItem value={10} suffix="+" label="Happy clients" start={statsInView} />
         </div>
+
+        <Reveal>
+        <section className="mt-16 py-10 text-center">
+          <p className="mx-auto max-w-2xl font-serif text-4xl leading-tight text-ink sm:text-5xl">
+            I can create you anything from a simple website to a custom complex ERP system.
+          </p>
+          <a href="mailto:sheshamagi18@gmail.com" className="mt-6 inline-block font-mono text-xs uppercase tracking-wide text-accent hover:underline">
+            Let&apos;s talk →
+          </a>
+        </section>
+      </Reveal>
+
       </section>
 
       {/* Experience timeline */}
