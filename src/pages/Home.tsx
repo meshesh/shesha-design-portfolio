@@ -13,20 +13,20 @@ const experience = [
   {
     company: 'TrustlyPay',
     role: 'Product Designer',
-    period: 'Mar 2025 – Mar 2026',
-    description: 'Led dashboard redesign through a full tech stack migration (PHP/Java → Node.js + React).',
+    period: 'Mar 2025 – Current',
+    description: 'Leding dashboard redesign through a full tech stack migration (PHP/Java → Node.js + React).',
   },
   {
     company: 'Xyenta',
     role: 'UI/UX Designer',
-    period: 'Mar – Sep 2023',
-    description: 'Owned design lifecycle end-to-end, hired 2 designers.',
+    period: 'Mar 2023 – Sep 2023',
+    description: 'Owned Design Lifecycle end-to-end | 0>1 and helped hire 2 designers.',
   },
   {
     company: 'Amazon',
     role: 'UX Designer I',
     period: 'Jun 2021 – Dec 2022',
-    description: 'Amazon Music flows, prototypes, and design system contributions.',
+    description: 'Amazon Music - Flows, Prototypes, and Design System contributions.',
   },
 ];
 
@@ -43,7 +43,7 @@ export function Home() {
 
         <Reveal delay={200}>
           <div className="mt-6 flex items-center gap-2.5">
-            <span className="status-dot inline-block h-2.5 w-2.5 rounded-full bg-accent" />
+            <span className="status-dot inline-block h-2.5 w-2.5 rounded-full" style={{ backgroundColor: 'var(--success)' }} />
             <span className="font-mono text-xs uppercase tracking-wide text-ink-soft">
               Open to freelance projects
             </span>
@@ -52,7 +52,7 @@ export function Home() {
 
         <Reveal delay={300}>
           <h1 className="mt-8 text-center font-serif text-6xl text-ink sm:text-7xl">
-            Hi, I'm Shesha
+            Hi, I'm Shesha Ram
           </h1>
         </Reveal>
 
@@ -153,21 +153,19 @@ export function Home() {
         <div className="mt-10 border-t border-line">
           <WorkRow
             index="01"
+            title="TrustlyPay Fintech Dashboard"
+            subtitle="Cross-border payments dashboard redesign"
+            tags={['Product Design', 'Dashboard', 'React']}
+            imageLabel="Add TrustlyPay cover"
+            to="/work/trustlypay"
+          />
+           <WorkRow
+            index="02"
             title="Growcoins"
             subtitle="A savings and investment platform for Gen-Z"
             tags={['UI/UX', 'Product Design', 'Design System']}
-            year="2024"
             imageLabel="Add Growcoins cover"
             to="/work/growcoins"
-          />
-          <WorkRow
-            index="02"
-            title="TrustlyPay"
-            subtitle="Cross-border payments dashboard redesign"
-            tags={['Product Design', 'Dashboard', 'React']}
-            year="2025"
-            imageLabel="Add TrustlyPay cover"
-            to="/work/trustlypay"
           />
         </div>
       </section>
@@ -180,8 +178,7 @@ export function Home() {
         <div className="mt-4 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:items-center">
           <Reveal delay={100}>
             <p className="font-serif text-3xl leading-snug text-ink sm:text-4xl">
-              Outside of design, you'll find me exploring new coffee shops, reading about emerging tech,
-              and capturing moments on film.
+              When I'm not designing products, I'm usually behind a camera — chasing light, texture, and quiet moments — or collecting Hotwheels.
             </p>
             <Link
               to="/life"
@@ -191,8 +188,12 @@ export function Home() {
             </Link>
           </Reveal>
           <Reveal delay={200}>
-            <Placeholder label="Add life-photo-1.jpg" className="w-full rounded-lg" aspectRatio="4/3" />
-          </Reveal>
+  <img
+    src="/life-photos/life-home.JPG"
+    alt="Life"
+    className="w-full rounded-lg aspect-[1] object-cover"
+  />
+</Reveal>
         </div>
       </section>
     </div>

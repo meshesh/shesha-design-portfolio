@@ -39,7 +39,7 @@ export function Footer() {
         </div>
 
         <p className="mt-10 text-xs text-ink-soft">
-          © {new Date().getFullYear()} Shesha Magi. Designed & built with care.
+          © {new Date().getFullYear()} Shesha Magi. Designed & Built with Care and AI.
         </p>
       </div>
     </footer>

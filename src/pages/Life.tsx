@@ -26,7 +26,7 @@ export function Life() {
       <Reveal delay={200}>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
           When I'm not designing products, I'm usually behind a camera — chasing light, texture, and
-          quiet moments — or reading up on automobiles and the engineering that shapes them.
+          quiet moments — or collecting Hotwheels.
         </p>
       </Reveal>
 

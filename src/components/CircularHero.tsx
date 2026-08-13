@@ -29,7 +29,7 @@ export function CircularHero() {
       {/* Circular photo */}
       <div className="overflow-hidden rounded-full border-4 border-bg shadow-xl" style={{ width: 260, height: 260 }}>
         <ImageWithFallback
-          src="/profile-photo copy 3.JPG"
+          src="/profile-photo.JPG"
           alt="Shesha Magi"
           label="profile-photo copy 3.JPG"
           className="h-full w-full object-cover"
