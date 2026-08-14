@@ -46,9 +46,9 @@ const experience = [
 
 export function Home() {
   useSEO({
-    title: "Shesha Magi — Product Designer & UI/UX Designer",
+    title: "Shesha Magi — Freelance Product Designer & UI/UX Designer",
     description:
-      "Shesha Ram Magi (Shesha Ram) is a Product Designer and UI/UX Designer crafting dashboards, design systems, and digital products. Available for freelance and full-time roles.",
+      "Shesha Ram Magi (Shesha Ram / Shesha Magi) is a Freelance Product Designer and UI/UX Designer in India, taking on freelance projects in dashboards, design systems, and digital products.",
     path: "/",
   });
   const { ref: statsRef, inView: statsInView } = useInView();
@@ -76,12 +76,13 @@ export function Home() {
         <Reveal delay={300}>
           <h1 className="mt-8 text-center font-serif text-[clamp(1.75rem,5vw_+_1rem,4.5rem)] text-ink">
             Hi, I'm Shesha Ram
+            <span className="sr-only"> (Shesha Magi, Shesha Ram Magi)</span>
           </h1>
         </Reveal>
 
         <Reveal delay={400}>
           <p className="mt-4 text-center text-sm text-ink-soft sm:text-base">
-            Product Designer | UI/UX | Design Systems | Vibecoding
+            Freelance Product Designer | UI/UX | Design Systems | Vibecoding
           </p>
         </Reveal>
 
@@ -164,8 +165,8 @@ export function Home() {
         <Reveal>
           <section className="mt-16 py-10 text-center">
             <p className="mx-auto max-w-2xl font-serif text-4xl leading-tight text-ink sm:text-5xl">
-              I can create you anything from a simple website to a custom
-              complex ERP system.
+              I can create you anything from a Simple Website to a Custom
+              Complex ERP System.
             </p>
             <EmailLink
               email="sheshamagi18@gmail.com"
@@ -255,9 +256,8 @@ export function Home() {
         <div className="mt-4 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:items-center">
           <Reveal delay={100}>
             <p className="font-serif text-3xl leading-snug text-ink sm:text-4xl">
-              When I'm not Designing products, I'm usually behind a camera —
-              chasing light, texture, and quiet moments — or collecting
-              Hotwheels.
+              When I'm not Designing products, I'm usually behind a camera
+              chasing light, texture, and quiet moments or collecting Hotwheels.
             </p>
             <Link
               to="/life"

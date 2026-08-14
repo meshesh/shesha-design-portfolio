@@ -4,7 +4,10 @@
       "Bash(npm run *)",
       "Bash(git status *)",
       "Bash(git ls-files *)",
-      "Bash(git mv *)"
+      "Bash(git mv *)",
+      "WebSearch",
+      "WebFetch(domain:sheshamagi.in)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --window-size=1200,630 --screenshot=C:/Users/shesh/AppData/Local/Temp/claude/s--projects-Portfolio-shesha-design-portfolio/f4bea2ee-c1a6-492e-a08f-a09ec4c3a934/scratchpad/og-image-raw.png file:///C:/Users/shesh/AppData/Local/Temp/claude/s--projects-Portfolio-shesha-design-portfolio/f4bea2ee-c1a6-492e-a08f-a09ec4c3a934/scratchpad/og-image.html)"
     ]
   }
 }

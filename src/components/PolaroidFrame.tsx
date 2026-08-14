@@ -18,7 +18,7 @@ export function PolaroidFrame({ src, caption, rotation }: PolaroidFrameProps) {
         />
       </div>
 
-      <p className="font-polaroid absolute bottom-3 left-0 right-0 text-center text-lg text-ink">
+      <p className="font-polaroid absolute bottom-3 left-0 right-0 text-center text-base text-ink sm:text-lg">
         {caption}
       </p>
     </div>
