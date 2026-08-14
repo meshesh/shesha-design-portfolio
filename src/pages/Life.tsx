@@ -1,82 +1,82 @@
-import { Reveal } from '@/components/Reveal';
-import { PolaroidFrame } from '@/components/PolaroidFrame';
-import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { Reveal } from "@/components/Reveal";
+import { PolaroidFrame } from "@/components/PolaroidFrame";
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 const photos = [
   {
-    src: '/life-photos/IMG_0182.JPG',
-    caption: 'Caption for photo 1',
+    src: "/life-photos/life-01.jpg",
+    caption: "Fly Away!",
     rotation: 2,
   },
   {
-    src: '/life-photos/IMG_0608.jpeg',
-    caption: 'Caption for photo 2',
+    src: "/life-photos/life-02.jpg",
+    caption: "Party Scenes",
     rotation: -3,
   },
   {
-    src: '/life-photos/IMG_0674.jpeg',
-    caption: 'Caption for photo 3',
+    src: "/life-photos/life-03.jpg",
+    caption: "Ethnic",
     rotation: 2,
   },
   {
-    src: '/life-photos/IMG_0928.JPG',
-    caption: 'Caption for photo 4',
+    src: "/life-photos/life-04.jpg",
+    caption: "Camden Market",
     rotation: -2,
   },
   {
-    src: '/life-photos/IMG_2195.JPG',
-    caption: 'Caption for photo 5',
+    src: "/life-photos/life-05.jpg",
+    caption: "When Stressed... Dab!",
     rotation: 3,
   },
   {
-    src: '/life-photos/IMG_2737.JPG',
-    caption: 'Caption for photo 6',
+    src: "/life-photos/life-06.jpg",
+    caption: "Me Myself and I",
     rotation: -2,
   },
   {
-    src: '/life-photos/IMG_3487.JPG',
-    caption: 'Caption for photo 7',
+    src: "/life-photos/life-07.jpg",
+    caption: "Inner Butterfly",
     rotation: 2,
   },
   {
-    src: '/life-photos/IMG_3544.JPG',
-    caption: 'Caption for photo 8',
+    src: "/life-photos/life-08.jpg",
+    caption: "Time Runs",
     rotation: -3,
   },
   {
-    src: '/life-photos/IMG_3567.jpeg',
-    caption: 'Caption for photo 9',
+    src: "/life-photos/life-09.jpg",
+    caption: "Garuda!",
     rotation: 2,
   },
   {
-    src: '/life-photos/IMG_3810.JPG',
-    caption: 'Caption for photo 10',
+    src: "/life-photos/life-10.jpg",
+    caption: "Sharp",
     rotation: -2,
   },
   {
-    src: '/life-photos/IMG_4550.JPG',
-    caption: 'Caption for photo 11',
+    src: "/life-photos/life-11.jpg",
+    caption: "Food is Luv",
     rotation: 3,
   },
   {
-    src: '/life-photos/IMG_4660.jpeg',
-    caption: 'Caption for photo 12',
+    src: "/life-photos/life-12.jpg",
+    caption: "First Snow",
     rotation: -2,
   },
   {
-    src: '/life-photos/IMG_4800.JPG',
-    caption: 'Caption for photo 13',
+    src: "/life-photos/life-13.jpg",
+    caption: "Take a Break",
     rotation: 2,
   },
   {
-    src: '/life-photos/IMG_5986.JPG',
-    caption: 'Caption for photo 14',
+    src: "/life-photos/life-14.jpg",
+    caption: "Stairs of Life",
     rotation: -3,
   },
   {
-    src: '/life-photos/life-home.JPG',
-    caption: 'Caption for photo 15',
+    src: "/life-photos/life-15.jpg",
+    caption: "Sundari!",
     rotation: 2,
   },
 ];
@@ -105,9 +105,8 @@ export function Life() {
 
       <Reveal delay={200}>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-          When I'm not designing products, I'm usually behind a camera — chasing
-          light, texture, and quiet moments — or reading up on automobiles and
-          the engineering that shapes them.
+          When I'm not Designing products, I'm usually behind a camera — chasing
+          light, texture, and quiet moments — or collecting Hotwheels.
         </p>
       </Reveal>
 

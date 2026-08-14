@@ -1,32 +1,45 @@
-import { Reveal } from '@/components/Reveal';
-import { StatItem } from '@/components/StatItem';
-import { WorkRow } from '@/components/WorkRow';
-import { Placeholder } from '@/components/Placeholder';
-import { CircularHero } from '@/components/CircularHero';
-import { useInView } from '@/hooks/useInView';
-import { ArrowDown, Download } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Reveal } from "@/components/Reveal";
+import { StatItem } from "@/components/StatItem";
+import { WorkRow } from "@/components/WorkRow";
+import { Placeholder } from "@/components/Placeholder";
+import { CircularHero } from "@/components/CircularHero";
+import { EmailLink } from "@/components/EmailLink";
+import { useInView } from "@/hooks/useInView";
+import { ArrowDown, Download } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const tools = ['Figma', 'Adobe XD', 'Illustrator', 'InVision', 'Bolt', 'Replit', 'Claude', 'ChatGPT'];
+const tools = [
+  "Figma",
+  "Adobe XD",
+  "Illustrator",
+  "InVision",
+  "Bolt",
+  "Replit",
+  "Claude",
+  "ChatGPT",
+];
 
 const experience = [
   {
-    company: 'TrustlyPay',
-    role: 'Product Designer',
-    period: 'Mar 2025 – Current',
-    description: 'Leding dashboard redesign through a full tech stack migration (PHP/Java → Node.js + React).',
+    company: "TrustlyPay",
+    role: "Product Designer",
+    period: "Mar 2025 – Current",
+    description:
+      "Leding dashboard redesign through a full tech stack migration (PHP/Java → Node.js + React).",
   },
   {
-    company: 'Xyenta',
-    role: 'UI/UX Designer',
-    period: 'Mar 2023 – Sep 2023',
-    description: 'Owned Design Lifecycle end-to-end | 0>1 and helped hire 2 designers.',
+    company: "Xyenta",
+    role: "UI/UX Designer",
+    period: "Mar 2023 – Sep 2023",
+    description:
+      "Owned Design Lifecycle end-to-end | 0>1 and helped hire 2 designers.",
   },
   {
-    company: 'Amazon',
-    role: 'UX Designer I',
-    period: 'Jun 2021 – Dec 2022',
-    description: 'Amazon Music - Flows, Prototypes, and Design System contributions.',
+    company: "Amazon",
+    role: "UX Designer I",
+    period: "Jun 2021 – Dec 2022",
+    description:
+      "Amazon Music - Flows, Prototypes, and Design System contributions.",
   },
 ];
 
@@ -45,7 +58,10 @@ export function Home() {
 
         <Reveal delay={200}>
           <div className="mt-6 flex items-center gap-2.5">
-            <span className="status-dot inline-block h-2.5 w-2.5 rounded-full" style={{ backgroundColor: 'var(--success)' }} />
+            <span
+              className="status-dot inline-block h-2.5 w-2.5 rounded-full"
+              style={{ backgroundColor: "var(--success)" }}
+            />
             <span className="font-mono text-xs uppercase tracking-wide text-ink-soft">
               Open to freelance projects
             </span>
@@ -66,9 +82,12 @@ export function Home() {
 
         <Reveal delay={500}>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
-            <a href="mailto:sheshamagi18@gmail.com" className="text-sm text-ink hover:text-accent">
+            <EmailLink
+              email="sheshamagi18@gmail.com"
+              className="text-sm text-ink hover:text-accent"
+            >
               sheshamagi18@gmail.com
-            </a>
+            </EmailLink>
             <a
               href="/resume.pdf"
               download
@@ -90,12 +109,15 @@ export function Home() {
       {/* Intro */}
       <section id="intro" className="mx-auto max-w-4xl px-5 py-24 sm:px-8">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">01 — Intro</p>
+          <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">
+            01 — Intro
+          </p>
         </Reveal>
         <Reveal delay={100}>
           <h2 className="mt-4 max-w-2xl font-serif text-3xl leading-snug text-ink sm:text-4xl">
-            I craft intuitive interfaces where user experience meets product strategy — blending UI/UX
-            precision, systems thinking, and a bit of vibe coding to ship products people love.
+            I craft intuitive interfaces where user experience meets product
+            strategy — blending UI/UX precision, systems thinking, and a bit of
+            vibe coding to ship products people love.
           </h2>
         </Reveal>
 
@@ -110,32 +132,57 @@ export function Home() {
         </Reveal>
 
         {/* Stats strip */}
-        <div ref={statsRef} className="mt-16 grid grid-cols-1 gap-8 border-y border-line py-10 sm:grid-cols-3">
-          <StatItem value={5} suffix="+" label="Products shipped" start={statsInView} />
-          <StatItem value={4} suffix="" label="Years experience" start={statsInView} />
-          <StatItem value={10} suffix="+" label="Happy clients" start={statsInView} />
+        <div
+          ref={statsRef}
+          className="mt-16 grid grid-cols-1 gap-8 border-y border-line py-10 sm:grid-cols-3"
+        >
+          <StatItem
+            value={5}
+            suffix="+"
+            label="Products shipped"
+            start={statsInView}
+          />
+          <StatItem
+            value={4}
+            suffix=""
+            label="Years experience"
+            start={statsInView}
+          />
+          <StatItem
+            value={10}
+            suffix="+"
+            label="Happy clients"
+            start={statsInView}
+          />
         </div>
 
         <Reveal>
-        <section className="mt-16 py-10 text-center">
-          <p className="mx-auto max-w-2xl font-serif text-4xl leading-tight text-ink sm:text-5xl">
-            I can create you anything from a simple website to a custom complex ERP system.
-          </p>
-          <a href="mailto:sheshamagi18@gmail.com" className="mt-6 inline-block font-mono text-xs uppercase tracking-wide text-accent hover:underline">
-            Let&apos;s talk →
-          </a>
-        </section>
-      </Reveal>
-
+          <section className="mt-16 py-10 text-center">
+            <p className="mx-auto max-w-2xl font-serif text-4xl leading-tight text-ink sm:text-5xl">
+              I can create you anything from a simple website to a custom
+              complex ERP system.
+            </p>
+            <EmailLink
+              email="sheshamagi18@gmail.com"
+              className="mt-6 inline-block font-mono text-xs uppercase tracking-wide text-accent hover:underline"
+            >
+              Let&apos;s talk →
+            </EmailLink>
+          </section>
+        </Reveal>
       </section>
 
       {/* Experience timeline */}
       <section className="mx-auto max-w-4xl px-5 py-24 sm:px-8">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">02 — Experience</p>
+          <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">
+            02 — Experience
+          </p>
         </Reveal>
         <Reveal delay={100}>
-          <h2 className="mt-4 font-serif text-4xl text-ink sm:text-5xl">Where I've worked</h2>
+          <h2 className="mt-4 font-serif text-4xl text-ink sm:text-5xl">
+            Where I've worked
+          </h2>
         </Reveal>
 
         <div className="mt-12 space-y-8">
@@ -144,9 +191,12 @@ export function Home() {
               <div className="timeline-item pl-8">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                   <h3 className="font-serif text-2xl text-ink">
-                    {job.company} <span className="text-ink-soft"> — {job.role}</span>
+                    {job.company}{" "}
+                    <span className="text-ink-soft"> — {job.role}</span>
                   </h3>
-                  <span className="font-mono text-xs text-ink-soft">{job.period}</span>
+                  <span className="font-mono text-xs text-ink-soft">
+                    {job.period}
+                  </span>
                 </div>
                 <p className="mt-2 text-sm text-ink-soft">{job.description}</p>
               </div>
@@ -158,10 +208,14 @@ export function Home() {
       {/* Featured work */}
       <section className="mx-auto max-w-5xl px-5 py-24 sm:px-8">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">03 — Featured Work</p>
+          <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">
+            03 — Featured Work
+          </p>
         </Reveal>
         <Reveal delay={100}>
-          <h2 className="mt-4 font-serif text-4xl text-ink sm:text-5xl">Selected projects</h2>
+          <h2 className="mt-4 font-serif text-4xl text-ink sm:text-5xl">
+            Selected projects
+          </h2>
         </Reveal>
 
         <div className="mt-10 border-t border-line">
@@ -169,16 +223,18 @@ export function Home() {
             index="01"
             title="TrustlyPay Fintech Dashboard"
             subtitle="Cross-border payments dashboard redesign"
-            tags={['Product Design', 'Dashboard', 'React']}
+            tags={["Product Design", "Dashboard", "React"]}
             imageLabel="Add TrustlyPay cover"
+            image="/tp-dashboard.jpg"
             to="/work/trustlypay"
           />
-           <WorkRow
+          <WorkRow
             index="02"
             title="Growcoins"
             subtitle="A savings and investment platform for Gen-Z"
-            tags={['UI/UX', 'Product Design', 'Design System']}
+            tags={["UI/UX", "Product Design", "Design System"]}
             imageLabel="Add Growcoins cover"
+            image="/growcoins.jpg"
             to="/work/growcoins"
           />
         </div>
@@ -187,12 +243,16 @@ export function Home() {
       {/* Life teaser */}
       <section className="mx-auto max-w-5xl px-5 py-24 sm:px-8">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">04 — Life</p>
+          <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">
+            04 — Life
+          </p>
         </Reveal>
         <div className="mt-4 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:items-center">
           <Reveal delay={100}>
             <p className="font-serif text-3xl leading-snug text-ink sm:text-4xl">
-              When I'm not designing products, I'm usually behind a camera — chasing light, texture, and quiet moments — or collecting Hotwheels.
+              When I'm not Designing products, I'm usually behind a camera —
+              chasing light, texture, and quiet moments — or collecting
+              Hotwheels.
             </p>
             <Link
               to="/life"
@@ -202,12 +262,12 @@ export function Home() {
             </Link>
           </Reveal>
           <Reveal delay={200}>
-  <img
-    src="/life-photos/life-home.JPG"
-    alt="Life"
-    className="w-full rounded-lg aspect-[1] object-cover"
-  />
-</Reveal>
+            <img
+              src="/life-photos/life-home.jpg"
+              alt="Life"
+              className="w-full rounded-lg aspect-[1] object-cover"
+            />
+          </Reveal>
         </div>
       </section>
     </div>

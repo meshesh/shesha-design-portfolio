@@ -1,11 +1,28 @@
-import { Mail, Dribbble, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Dribbble, Linkedin, Instagram } from "lucide-react";
+import { EmailLink } from "@/components/EmailLink";
 
 export function Footer() {
   const socials = [
-    { label: 'Dribbble', href: 'https://dribbble.com', icon: Dribbble },
-    { label: 'Behance', href: 'https://behance.net', icon: BehanceIcon },
-    { label: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-    { label: 'Instagram', href: 'https://instagram.com', icon: Instagram },
+    {
+      label: "Dribbble",
+      href: "https://dribbble.com/me_shesh",
+      icon: Dribbble,
+    },
+    {
+      label: "Behance",
+      href: "https://www.behance.net/me_shesh",
+      icon: BehanceIcon,
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/shesharam/",
+      icon: Linkedin,
+    },
+    {
+      label: "Instagram",
+      href: "https://www.instagram.com/shesh.fig",
+      icon: Instagram,
+    },
   ];
 
   return (
@@ -13,13 +30,15 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
         <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
-            <a
-              href="mailto:sheshamagi18@gmail.com"
+            <EmailLink
+              email="sheshamagi18@gmail.com"
               className="font-serif text-3xl text-ink hover:text-accent"
             >
               sheshamagi18@gmail.com
-            </a>
-            <p className="mt-2 text-sm text-ink-soft">Available for freelance & full-time roles</p>
+            </EmailLink>
+            <p className="mt-2 text-sm text-ink-soft">
+              Available for freelance & full-time roles
+            </p>
           </div>
 
           <div className="flex flex-wrap gap-3">
@@ -39,7 +58,8 @@ export function Footer() {
         </div>
 
         <p className="mt-10 text-xs text-ink-soft">
-          © {new Date().getFullYear()} Shesha Magi. Designed & Built with Care and AI.
+          © {new Date().getFullYear()} Shesha Magi. Designed & Built with Care
+          and AI.
         </p>
       </div>
     </footer>

@@ -5,15 +5,16 @@ interface WorkRowProps {
   title: string;
   subtitle: string;
   tags: string[];
-  year: string;
+  year?: string;
   imageLabel: string;
+  image?: string;
   to: string;
 }
 
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 
-export function WorkRow({ index, title, subtitle, tags, year, imageLabel, to }: WorkRowProps) {
+export function WorkRow({ index, title, subtitle, tags, year, imageLabel, image, to }: WorkRowProps) {
   return (
     <Link to={to} className="work-row group block border-b border-line py-8">
       <div className="grid grid-cols-12 items-center gap-4">
@@ -37,8 +38,12 @@ export function WorkRow({ index, title, subtitle, tags, year, imageLabel, to }: 
         </div>
 
         <div className="col-span-1 hidden justify-end sm:flex">
-          <div className="h-20 w-32 overflow-hidden">
-            <Placeholder label={imageLabel} className="h-full w-full" />
+          <div className="h-20 w-32 overflow-hidden rounded-md">
+            {image ? (
+              <img src={image} alt={title} className="h-full w-full object-cover" />
+            ) : (
+              <Placeholder label={imageLabel} className="h-full w-full" />
+            )}
           </div>
         </div>
 
