@@ -10,11 +10,11 @@ export function CircularHero() {
 
   return (
     <div
-      className="relative flex items-center justify-center"
-      style={{ width: 400, height: 400 }}
+      className="relative mx-auto flex items-center justify-center"
+      style={{ width: "clamp(240px, 68vw, 400px)", height: "clamp(240px, 68vw, 400px)" }}
     >
       {/* Circular text */}
-      <svg className="circular-text absolute inset-0" viewBox="0 0 400 400" width="400" height="400">
+      <svg className="circular-text absolute inset-0 h-full w-full" viewBox="0 0 400 400">
         <defs>
           <path
             id="circle-path"
@@ -30,7 +30,10 @@ export function CircularHero() {
       </svg>
 
       {/* Circular photo */}
-      <div className="overflow-hidden rounded-full border-4 border-bg shadow-xl" style={{ width: 260, height: 260 }}>
+      <div
+        className="overflow-hidden rounded-full border-4 border-bg shadow-xl"
+        style={{ width: "65%", height: "65%" }}
+      >
         <ImageWithFallback
           src="/profile-photo.JPG"
           alt="Shesha Magi"

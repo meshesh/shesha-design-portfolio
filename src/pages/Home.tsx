@@ -49,11 +49,9 @@ export function Home() {
   return (
     <div>
       {/* Hero — full viewport */}
-      <section className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-5 py-12">
+      <section className="flex h-[calc(100dvh-4rem)] flex-col items-center justify-center px-5 py-12">
         <Reveal>
-          <div className="origin-center scale-[0.55] sm:scale-75 md:scale-90 lg:scale-100">
-            <CircularHero />
-          </div>
+          <CircularHero />
         </Reveal>
 
         <Reveal delay={200}>

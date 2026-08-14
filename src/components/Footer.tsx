@@ -36,8 +36,12 @@ export function Footer() {
             >
               sheshamagi18@gmail.com
             </EmailLink>
-            <p className="mt-2 text-sm text-ink-soft">
-              Available for freelance & full-time roles
+            <p className="mt-2 flex items-center gap-2 text-sm text-ink-soft">
+              <span
+                className="status-dot inline-block h-2.5 w-2.5 shrink-0 rounded-full"
+                style={{ backgroundColor: "var(--success)" }}
+              />
+              Available for Freelance & Full-Time Roles
             </p>
           </div>
 

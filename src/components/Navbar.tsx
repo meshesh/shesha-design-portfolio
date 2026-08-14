@@ -5,7 +5,7 @@ export function Navbar() {
   const location = useLocation();
 
   const navItems = [
-    { label: "Intro", path: "/#intro" },
+    { label: "Intro", path: "/" },
     { label: "Work", path: "/work" },
     { label: "Life", path: "/life" },
   ];
@@ -16,7 +16,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="nav-blur sticky top-0 z-50 w-full border-b border-line">
+    <nav className="nav-blur fixed top-0 left-0 z-50 w-full border-b border-line">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:px-8">
         <Link
           to="/"
@@ -28,7 +28,7 @@ export function Navbar() {
             alt="Shesha"
             width={28}
             height={28}
-            className="h-24 w-24"
+            className="h-9 w-9 sm:h-24 sm:w-24"
           />
         </Link>
 

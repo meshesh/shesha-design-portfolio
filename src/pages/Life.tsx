@@ -110,7 +110,7 @@ export function Life() {
         </p>
       </Reveal>
 
-      <div className="mt-16 grid grid-cols-1 gap-8 px-2 sm:grid-cols-2 sm:px-4 lg:grid-cols-3 lg:px-8 xl:grid-cols-4">
+      <div className="mt-16 grid grid-cols-2 gap-4 px-2 sm:gap-8 sm:px-4 lg:grid-cols-3 lg:px-8">
         {photos.map((photo, index) => (
           <Reveal key={photo.src} delay={(index % 4) * 80}>
             <div className="mx-auto max-w-[260px]">
