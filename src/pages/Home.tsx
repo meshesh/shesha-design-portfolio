@@ -87,7 +87,7 @@ export function Home() {
               sheshamagi18@gmail.com
             </EmailLink>
             <a
-              href="/resume.pdf"
+              href="/Shesha-Resume.pdf"
               download
               className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-transform duration-200 hover:scale-[1.03]"
             >
