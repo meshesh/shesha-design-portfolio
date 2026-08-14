@@ -82,7 +82,7 @@ export function Home() {
 
         <Reveal delay={400}>
           <p className="mt-4 text-center text-sm text-ink-soft sm:text-base">
-            Freelance Product Designer | UI/UX | Design Systems | Vibecoding
+            Product Designer | UI/UX | Design Systems | Vibecoding
           </p>
         </Reveal>
 
