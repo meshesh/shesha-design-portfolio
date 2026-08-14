@@ -35,13 +35,13 @@ const experience = [
     description:
       "Owned Design Lifecycle end-to-end | 0>1 and helped hire 2 designers.",
   },
-  {
-    company: "Amazon",
-    role: "UX Designer I",
-    period: "Jun 2021 – Dec 2022",
-    description:
-      "Amazon Music - Flows, Prototypes, and Design System contributions.",
-  },
+  // {
+  //   company: "Amazon",
+  //   role: "UX Designer I",
+  //   period: "Jun 2021 – Dec 2022",
+  //   description:
+  //     "Amazon Music - Flows, Prototypes, and Design System contributions.",
+  // },
 ];
 
 export function Home() {
