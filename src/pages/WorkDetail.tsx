@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
 import { Placeholder } from '@/components/Placeholder';
 import { Reveal } from '@/components/Reveal';
+import { useSEO } from '@/hooks/useSEO';
 
 type Project = {
   title: string;
@@ -63,6 +64,16 @@ function MetaItem({ label, value }: { label: string; value: string }) {
 export function WorkDetail() {
   const { slug } = useParams();
   const project = slug ? projectData[slug] : undefined;
+
+  useSEO({
+    title: project
+      ? `${project.title} — Shesha Magi | Product Design Case Study`
+      : "Project not found — Shesha Magi",
+    description: project
+      ? `${project.problem} A case study by Shesha Ram Magi, ${project.role} at ${project.company}.`
+      : "This project could not be found.",
+    path: `/work/${slug ?? ""}`,
+  });
 
   if (!project) {
     return (

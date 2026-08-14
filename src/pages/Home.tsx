@@ -5,6 +5,7 @@ import { Placeholder } from "@/components/Placeholder";
 import { CircularHero } from "@/components/CircularHero";
 import { EmailLink } from "@/components/EmailLink";
 import { useInView } from "@/hooks/useInView";
+import { useSEO } from "@/hooks/useSEO";
 import { ArrowDown, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -44,6 +45,12 @@ const experience = [
 ];
 
 export function Home() {
+  useSEO({
+    title: "Shesha Magi — Product Designer & UI/UX Designer",
+    description:
+      "Shesha Ram Magi (Shesha Ram) is a Product Designer and UI/UX Designer crafting dashboards, design systems, and digital products. Available for freelance and full-time roles.",
+    path: "/",
+  });
   const { ref: statsRef, inView: statsInView } = useInView();
 
   return (
@@ -73,7 +80,7 @@ export function Home() {
         </Reveal>
 
         <Reveal delay={400}>
-          <p className="mt-4 text-center text-base text-ink-soft sm:text-lg">
+          <p className="mt-4 text-center text-sm text-ink-soft sm:text-base">
             Product Designer | UI/UX | Design Systems | Vibecoding
           </p>
         </Reveal>

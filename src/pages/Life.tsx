@@ -2,6 +2,7 @@ import { Reveal } from "@/components/Reveal";
 import { PolaroidFrame } from "@/components/PolaroidFrame";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 const photos = [
   {
@@ -82,6 +83,13 @@ const photos = [
 ];
 
 export function Life() {
+  useSEO({
+    title: "Life — Shesha Magi",
+    description:
+      "Beyond product design, Shesha Ram Magi shares photography and personal moments — chasing light, texture, and quiet scenes.",
+    path: "/life",
+  });
+
   return (
     <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
       <Link

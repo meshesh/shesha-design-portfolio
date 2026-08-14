@@ -4,6 +4,7 @@ import { Placeholder } from "@/components/Placeholder";
 import { Reveal } from "@/components/Reveal";
 import { WorkRow } from "@/components/WorkRow";
 import { EmailLink } from "@/components/EmailLink";
+import { useSEO } from "@/hooks/useSEO";
 
 const lighterProjects = [
   {
@@ -39,6 +40,13 @@ const lighterProjects = [
 ];
 
 export function WorkList() {
+  useSEO({
+    title: "Selected Work — Shesha Magi | Product & UI/UX Design Portfolio",
+    description:
+      "Product design case studies by Shesha Ram Magi, including TrustlyPay's fintech dashboard redesign and Growcoins, a savings and investment platform.",
+    path: "/work",
+  });
+
   return (
     <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8">
       <Link
