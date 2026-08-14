@@ -67,7 +67,7 @@ export function Home() {
         </Reveal>
 
         <Reveal delay={300}>
-          <h1 className="mt-8 text-center font-serif text-6xl text-ink sm:text-7xl">
+          <h1 className="mt-8 text-center font-serif text-[clamp(1.75rem,5vw_+_1rem,4.5rem)] text-ink">
             Hi, I'm Shesha Ram
           </h1>
         </Reveal>
