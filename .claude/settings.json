@@ -7,7 +7,19 @@
       "Bash(git mv *)",
       "WebSearch",
       "WebFetch(domain:sheshamagi.in)",
-      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --window-size=1200,630 --screenshot=C:/Users/shesh/AppData/Local/Temp/claude/s--projects-Portfolio-shesha-design-portfolio/f4bea2ee-c1a6-492e-a08f-a09ec4c3a934/scratchpad/og-image-raw.png file:///C:/Users/shesh/AppData/Local/Temp/claude/s--projects-Portfolio-shesha-design-portfolio/f4bea2ee-c1a6-492e-a08f-a09ec4c3a934/scratchpad/og-image.html)"
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --window-size=1200,630 --screenshot=C:/Users/shesh/AppData/Local/Temp/claude/s--projects-Portfolio-shesha-design-portfolio/f4bea2ee-c1a6-492e-a08f-a09ec4c3a934/scratchpad/og-image-raw.png file:///C:/Users/shesh/AppData/Local/Temp/claude/s--projects-Portfolio-shesha-design-portfolio/f4bea2ee-c1a6-492e-a08f-a09ec4c3a934/scratchpad/og-image.html)",
+      "Bash(npx tsc *)",
+      "Bash(chromium-cli --help)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(npx --yes playwright install chromium)",
+      "Bash(node \"C:\\\\Users\\\\shesh\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\s--projects-Portfolio-shesha-design-portfolio\\\\e37daffd-604e-402b-90d0-13b2876089be\\\\scratchpad\\\\snackbar-check.mjs\")",
+      "Bash(cp \"C:\\\\Users\\\\shesh\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\s--projects-Portfolio-shesha-design-portfolio\\\\e37daffd-604e-402b-90d0-13b2876089be\\\\scratchpad\\\\snackbar-check.mjs\" ./snackbar-check.mjs)",
+      "Bash(node ./snackbar-check.mjs)",
+      "Bash(npm install *)",
+      "Bash(node -e ' *)",
+      "Bash(lsof -ti:5174 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)",
+      "Bash(npm uninstall *)"
     ]
   }
 }

@@ -63,7 +63,7 @@ export function WorkList() {
       </Reveal>
       <Reveal delay={100}>
         <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-tight text-ink sm:text-7xl">
-          Selected projects
+          Selected Projects
         </h1>
       </Reveal>
       <Reveal delay={200}>
@@ -104,12 +104,40 @@ export function WorkList() {
       <section className="mt-28">
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">
-            02 — More work
+            02 — Pet projects
+          </p>
+        </Reveal>
+        <div className="mt-6 border-t border-line">
+          <WorkRow
+            index="01"
+            title="TakeOne"
+            subtitle="A project management tool for filmmakers"
+            tags={["Product Design", "0→1", "Side Project"]}
+            imageLabel="Add TakeOne cover"
+            image="/takeone.jpg"
+            to="/work/take-one"
+          />
+          <WorkRow
+            index="02"
+            title="Vano"
+            subtitle="A transportation app for private van drivers who transport children to school"
+            tags={["Product Design", "Mobile", "Side Project"]}
+            imageLabel="Add Vano cover"
+            image="/vano.png"
+            to="/work/vano"
+          />
+        </div>
+      </section>
+
+      <section className="mt-28">
+        <Reveal>
+          <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">
+            03 — More work
           </p>
         </Reveal>
         <Reveal delay={100}>
           <h2 className="mt-4 font-serif text-4xl text-ink sm:text-5xl">
-            Smaller explorations
+            Smaller Explorations
           </h2>
         </Reveal>
         <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">

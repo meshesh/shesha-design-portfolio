@@ -6,7 +6,10 @@ export function Navbar() {
   const location = useLocation();
   const containerRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
-  const [indicator, setIndicator] = useState<{ left: number; width: number } | null>(null);
+  const [indicator, setIndicator] = useState<{
+    left: number;
+    width: number;
+  } | null>(null);
 
   const navItems = [
     { label: "Intro", path: "/" },
@@ -19,7 +22,8 @@ export function Navbar() {
     return location.pathname === path;
   };
 
-  const activeItem = navItems.find((item) => isActive(item.path)) ?? navItems[0];
+  const activeItem =
+    navItems.find((item) => isActive(item.path)) ?? navItems[0];
 
   useLayoutEffect(() => {
     const updateIndicator = () => {
@@ -28,7 +32,10 @@ export function Navbar() {
       if (!el || !container) return;
       const elRect = el.getBoundingClientRect();
       const containerRect = container.getBoundingClientRect();
-      setIndicator({ left: elRect.left - containerRect.left, width: elRect.width });
+      setIndicator({
+        left: elRect.left - containerRect.left,
+        width: elRect.width,
+      });
     };
 
     updateIndicator();
@@ -71,9 +78,7 @@ export function Navbar() {
               }}
               to={item.path}
               className={`relative z-10 rounded-full px-3 py-1.5 text-xs transition-colors duration-300 sm:px-4 sm:text-sm ${
-                isActive(item.path)
-                  ? "text-bg"
-                  : "text-ink-soft hover:text-ink"
+                isActive(item.path) ? "text-bg" : "text-ink-soft hover:text-ink"
               }`}
             >
               {item.label}

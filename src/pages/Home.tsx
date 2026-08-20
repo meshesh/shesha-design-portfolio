@@ -179,7 +179,7 @@ export function Home() {
       </section>
 
       {/* Experience timeline */}
-      <section className="mx-auto max-w-4xl px-5 py-24 sm:px-8">
+      <section className="mx-auto max-w-4xl py-10 sm:px-8">
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-wide text-ink-soft">
             02 — Experience
@@ -256,8 +256,8 @@ export function Home() {
         <div className="mt-4 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:items-center">
           <Reveal delay={100}>
             <p className="font-serif text-3xl leading-snug text-ink sm:text-4xl">
-              When I'm not Designing products, I'm usually behind a camera
-              chasing light, texture, and quiet moments or collecting Hotwheels.
+              When I'm not Designing products, I'm usually behind a camera or
+              collecting Hotwheels.
             </p>
             <Link
               to="/life"

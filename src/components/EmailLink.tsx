@@ -17,9 +17,14 @@ export function EmailLink({ email, className, children }: EmailLinkProps) {
     if (!isDesktop()) return;
 
     e.preventDefault();
+    const rect = e.currentTarget.getBoundingClientRect();
     try {
       await navigator.clipboard.writeText(email);
-      showSnackbar("Email copied to clipboard");
+      showSnackbar("Email copied to clipboard", {
+        top: rect.bottom + 10,
+        left: rect.left,
+        width: rect.width,
+      });
     } catch {
       window.location.href = `mailto:${email}`;
     }
