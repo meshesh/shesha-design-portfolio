@@ -1,14 +1,15 @@
-import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { Analytics } from '@vercel/analytics/react';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
-import { CustomCursor } from '@/components/CustomCursor';
-import { SnackbarProvider } from '@/components/Snackbar';
-import { Home } from '@/pages/Home';
-import { WorkList } from '@/pages/WorkList';
-import { WorkDetail } from '@/pages/WorkDetail';
-import { Life } from '@/pages/Life';
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { CustomCursor } from "@/components/CustomCursor";
+import { SnackbarProvider } from "@/components/Snackbar";
+import { Home } from "@/pages/Home";
+import { WorkList } from "@/pages/WorkList";
+import { WorkDetail } from "@/pages/WorkDetail";
+import { Life } from "@/pages/Life";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -17,7 +18,7 @@ function ScrollToTop() {
     if (hash) {
       const el = document.querySelector(hash);
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({ behavior: "smooth" });
         return;
       }
     }
@@ -46,6 +47,7 @@ function App() {
           <Footer />
         </div>
         <Analytics />
+        <SpeedInsights />
       </SnackbarProvider>
     </BrowserRouter>
   );
