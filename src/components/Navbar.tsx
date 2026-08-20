@@ -19,6 +19,7 @@ export function Navbar() {
 
   const isActive = (path: string) => {
     if (path.startsWith("/#")) return location.pathname === "/";
+    if (path === "/work") return location.pathname.startsWith("/work");
     return location.pathname === path;
   };
 
