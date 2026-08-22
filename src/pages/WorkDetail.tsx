@@ -68,51 +68,128 @@ const projectData: Record<string, Project> = {
     displayImage1: "/tp01.jpg",
     displayImage2: "/tp02.jpg",
   },
+
+  // "take-one": {
+  //   title: "TakeOne",
+  //   role: "[Add role]",
+  //   company: "Personal project",
+  //   timeline: "[Add timeline]",
+  //   scope: "[Add scope, e.g. 0→1 Product design · Mobile/Web]",
+  //   problem:
+  //     "[Add problem statement] — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Independent filmmakers juggle scattered tools for scheduling, budgeting, and crew coordination, and TakeOne sets out to bring that into one place.",
+  //   constraints:
+  //     "[Add constraints] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //   decisions: [
+  //     "[Add key decision one] — Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //     "[Add key decision two] — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+  //     "[Add key decision three] — Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+  //   ],
+  //   outcome:
+  //     "[Add outcome] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //   reflection:
+  //     "[Add reflection] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  //   coverImage: "",
+  //   displayImage1: "",
+  //   displayImage2: "",
+  // },
+
   "take-one": {
     title: "TakeOne",
-    role: "[Add role]",
+    role: "Product Designer, Product Lead",
+
     company: "Personal project",
-    timeline: "[Add timeline]",
-    scope: "[Add scope, e.g. 0→1 Product design · Mobile/Web]",
+
+    timeline: "2026",
+
+    scope: "0→1 Product Design · SaaS · Web Application",
+
     problem:
-      "[Add problem statement] — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Independent filmmakers juggle scattered tools for scheduling, budgeting, and crew coordination, and TakeOne sets out to bring that into one place.",
+      "Independent filmmakers often rely on a mix of spreadsheets, messaging apps, documents, and disconnected tools to manage production. This creates fragmented workflows across planning, scheduling, budgeting, crew coordination, and production tracking. TakeOne was conceived as a unified production workspace that brings these workflows together without making the process feel overly complex.",
+
     constraints:
-      "[Add constraints] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "As a solo product designer, I owned the product from early problem definition through information architecture, feature planning, user flows, wireframes, visual design, and prototyping. The biggest constraint was scope: film production can involve dozens of workflows and user types, so the challenge was deciding what belonged in the core product and what could wait. The product also needed to support different production roles while remaining simple enough for small independent teams.",
+
     decisions: [
-      "[Add key decision one] — Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "[Add key decision two] — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      "[Add key decision three] — Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "Structured the product around the actual production lifecycle rather than individual tools, creating a connected workspace for projects, planning, scheduling, crew, finances, and production activities.",
+
+      "Designed a modular information architecture so different production roles could access the workflows relevant to them without overwhelming the rest of the team.",
+
+      "Established a focused design system with clear hierarchy, reusable components, and a consistent visual language so the product could scale across a large number of production workflows without becoming visually inconsistent.",
     ],
+
     outcome:
-      "[Add outcome] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "TakeOne evolved from an initial product idea into a structured SaaS concept with a defined information architecture, core workflows, design system, and high-fidelity product experience. The work helped clarify the MVP around the most important production workflows while creating a foundation that could expand into a broader production management platform.",
+
     reflection:
-      "[Add reflection] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    coverImage: "",
-    displayImage1: "",
-    displayImage2: "",
+      "The biggest lesson was that designing a 0→1 product is less about designing individual screens and more about deciding what the product should and should not be. Working without an existing product or established requirements forced me to think through the ecosystem, dependencies, user roles, and long-term scalability before committing to UI decisions.",
+
+    coverImage: "/takeone-cover.png",
+
+    displayImage1: "/takeone-01.jpg",
+
+    displayImage2: "/takeone-02.jpg",
   },
+
+  // vano: {
+  //   title: "Vano",
+  //   role: "[Add role]",
+  //   company: "Personal project",
+  //   timeline: "[Add timeline]",
+  //   scope: "[Add scope, e.g. 0→1 Product design · Mobile app]",
+  //   problem:
+  //     "[Add problem statement] — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Parents need a safer, more transparent way to track private van drivers who transport their children to and from school, and Vano sets out to solve that.",
+  //   constraints:
+  //     "[Add constraints] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //   decisions: [
+  //     "[Add key decision one] — Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //     "[Add key decision two] — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+  //     "[Add key decision three] — Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+  //   ],
+  //   outcome:
+  //     "[Add outcome] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //   reflection:
+  //     "[Add reflection] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  //   coverImage: "",
+  //   displayImage1: "",
+  //   displayImage2: "",
+  // },
+
   vano: {
     title: "Vano",
-    role: "[Add role]",
+    role: "Product Designer, Product Lead",
     company: "Personal project",
-    timeline: "[Add timeline]",
-    scope: "[Add scope, e.g. 0→1 Product design · Mobile app]",
+    timeline: "2026",
+    scope: "0→1 Product Design · Mobile App · SaaS",
+
     problem:
-      "[Add problem statement] — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Parents need a safer, more transparent way to track private van drivers who transport their children to and from school, and Vano sets out to solve that.",
+      "Private school van drivers often rely on phone calls, WhatsApp messages, spreadsheets, and memory to manage their daily operations. This makes it difficult to keep track of students, pickup requirements, attendance, and changes to the active group. Vano was conceived as a focused mobile workspace that brings these everyday transportation workflows into one simple experience.",
+
     constraints:
-      "[Add constraints] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "As a solo product designer and product lead, I owned Vano from early problem definition through information architecture, feature planning, user flows, interaction design, visual design, prototyping, and product implementation. The biggest constraint was defining the right MVP scope: school transportation involves multiple stakeholders and workflows, but the initial product needed to stay focused on the driver's most frequent operational needs without becoming a complex fleet-management platform.",
+
     decisions: [
-      "[Add key decision one] — Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "[Add key decision two] — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      "[Add key decision three] — Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "Structured the product around the driver's daily workflow rather than traditional fleet-management concepts, focusing on student management, pickup preparation, attendance, and exceptions.",
+
+      "Made the driver's active student group the core operational unit, keeping the initial experience simple while leaving room for future expansion.",
+
+      "Designed attendance as an operational workflow, allowing drivers to pre-mark a student absent or mark them absent when they reach the pickup location, reflecting how decisions happen in real-world situations.",
+
+      "Accounted for students joining during the academic year by allowing a pickup start date to be defined when adding them to the group.",
+
+      "Separated removing a student from the active group from permanently deleting their information, preserving a cleaner model for managing changing student groups.",
+
+      "Kept the MVP intentionally narrow by supporting a single active group, reflecting the typical operating model of an individual private van driver while creating a foundation for future expansion.",
     ],
+
     outcome:
-      "[Add outcome] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Vano evolved from an initial product idea into a defined 0→1 mobile product with a clear information architecture, driver-first workflows, interaction model, visual system, and functional MVP. The product establishes a focused foundation for managing school transportation operations without introducing the complexity of a traditional fleet-management platform.",
+
     reflection:
-      "[Add reflection] — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-    coverImage: "",
-    displayImage1: "",
-    displayImage2: "",
+      "The biggest lesson from Vano was that designing a real-world operational product requires resisting the temptation to solve everything at once. By focusing on the driver's recurring decisions and the moments where information could be lost or misunderstood, I was able to keep the MVP deliberately small while creating a product structure that could support a broader transportation platform in the future.",
+
+    coverImage: "/vano-cover.png",
+    displayImage1: "/vano-01.jpg",
+    displayImage2: "/vano-02.jpg",
   },
 };
 
