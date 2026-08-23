@@ -89,10 +89,10 @@ export function Home() {
         <Reveal delay={500}>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
             <EmailLink
-              email="sheshamagi18@gmail.com"
+              email="hello@sheshamagi.in"
               className="text-sm text-ink hover:text-accent"
             >
-              sheshamagi18@gmail.com
+              hello@sheshamagi.in
             </EmailLink>
             <a
               href="/Shesha-Resume.pdf"
@@ -169,7 +169,7 @@ export function Home() {
               Complex ERP System.
             </p>
             <EmailLink
-              email="sheshamagi18@gmail.com"
+              email="hello@sheshamagi.in"
               className="mt-6 inline-block font-mono text-xs uppercase tracking-wide text-accent hover:underline"
             >
               Let&apos;s talk →

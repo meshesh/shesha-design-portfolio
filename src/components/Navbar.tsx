@@ -88,7 +88,7 @@ export function Navbar() {
         </div>
 
         <EmailLink
-          email="sheshamagi18@gmail.com"
+          email="hello@sheshamagi.in"
           className="shrink-0 rounded-full bg-accent px-4 py-2 text-xs font-medium text-white transition-transform duration-200 hover:scale-[1.03] sm:px-5 sm:text-sm"
         >
           Contact

@@ -203,7 +203,7 @@ export function WorkList() {
             ERP system.
           </p>
           <EmailLink
-            email="sheshamagi18@gmail.com"
+            email="hello@sheshamagi.in"
             className="mt-6 inline-block font-mono text-xs uppercase tracking-wide text-accent hover:underline"
           >
             Let&apos;s talk →

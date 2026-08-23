@@ -31,10 +31,10 @@ export function Footer() {
         <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div>
             <EmailLink
-              email="sheshamagi18@gmail.com"
+              email="hello@sheshamagi.in"
               className="font-serif text-3xl text-ink hover:text-accent"
             >
-              sheshamagi18@gmail.com
+              hello@sheshamagi.in
             </EmailLink>
             <p className="mt-2 flex items-center gap-2 text-sm text-ink-soft">
               <span

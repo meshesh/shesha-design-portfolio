@@ -188,8 +188,8 @@ const projectData: Record<string, Project> = {
       "The biggest lesson from Vano was that designing a real-world operational product requires resisting the temptation to solve everything at once. By focusing on the driver's recurring decisions and the moments where information could be lost or misunderstood, I was able to keep the MVP deliberately small while creating a product structure that could support a broader transportation platform in the future.",
 
     coverImage: "/vano-cover.png",
-    displayImage1: "/vano-01.jpg",
-    displayImage2: "/vano-02.jpg",
+    displayImage1: "/vano-01.png",
+    displayImage2: "/vano-02.png",
   },
 };
 
