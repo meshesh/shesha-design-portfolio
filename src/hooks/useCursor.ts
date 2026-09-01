@@ -25,7 +25,7 @@ export function useCursor() {
 
       const target = e.target as HTMLElement;
       const isInteractive = !!target.closest(
-        'a, button, [data-cursor="hover"], .work-row, .tag-pill, input, [role="button"]'
+        'a, button, [data-cursor="hover"], input, [role="button"]'
       );
       setHovering(isInteractive);
     };
