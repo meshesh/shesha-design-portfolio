@@ -10,6 +10,7 @@ import { Home } from "@/pages/Home";
 import { WorkList } from "@/pages/WorkList";
 import { WorkDetail } from "@/pages/WorkDetail";
 import { Life } from "@/pages/Life";
+import { NotFound } from "@/pages/NotFound";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -42,6 +43,7 @@ function App() {
               <Route path="/work" element={<WorkList />} />
               <Route path="/work/:slug" element={<WorkDetail />} />
               <Route path="/life" element={<Life />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />
