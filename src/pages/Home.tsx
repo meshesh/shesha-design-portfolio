@@ -68,7 +68,7 @@ export function Home() {
               style={{ backgroundColor: "var(--success)" }}
             />
             <span className="font-mono text-xs uppercase tracking-wide text-ink-soft">
-              Open to freelance projects
+              Available for Freelance & Full-Time Roles
             </span>
           </div>
         </Reveal>
